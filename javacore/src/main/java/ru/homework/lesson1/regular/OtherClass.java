@@ -1,4 +1,4 @@
-package homework.lesson1.regular;
+package ru.homework.lesson1.regular;
 
 /**
  * Другой класс
