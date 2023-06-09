@@ -7,10 +7,16 @@ public class Main {
         String[][] array2 = new String[3][3];
         String[][] array3 = { {"1", "1", "1", "1"}, {"v", "1", "1", "1"}, {"1", "1", "1", "1"}, {"1", "1", "1", "1"} };
 
+        try {
+            System.out.println(checkAndSumArray(array1));
+            System.out.println(checkAndSumArray(array2));
+            System.out.println(checkAndSumArray(array3));
+        }catch (MyArraySizeException exception){
+            System.out.println("Неверный размер массива");
+        }catch (MyArrayDataException exception){
+            System.out.printf("Неверные данные в массиве. Позиция: [%d,%d]", exception.getI(), exception.getJ());
+        }
 
-        System.out.println(checkAndSumArray(array1));
-        System.out.println(checkAndSumArray(array2));
-        System.out.println(checkAndSumArray(array3));
 
     }
      public static int checkAndSumArray(String[][] array){  // throws MyArrayDataException, MyArraySizeException
