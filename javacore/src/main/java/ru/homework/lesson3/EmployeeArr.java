@@ -13,6 +13,7 @@ public class EmployeeArr {
             new FixedPayBaseEmployee("Roy", "Smith", 40, 80000),
             new FixedPayBaseEmployee("Rose", "Ling", 40, 49000),
             new FixedPayBaseEmployee("Ben", "Been", 40, 54000),
+            new FixedPayBaseEmployee("Ben", "Been", 40, 54000),
     };
 
     public BaseEmployee[] getEmployeeArr() {
